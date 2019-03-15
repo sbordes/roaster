@@ -1,6 +1,6 @@
 package org.jboss.forge.test.roaster.model.util;
 
-import org.jboss.forge.roaster.model.util.JDTOptions;
+import org.jboss.forge.roaster.model.util.impl.JDTOptions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;

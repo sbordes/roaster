@@ -1,4 +1,4 @@
-package org.jboss.forge.roaster.model.util;
+package org.jboss.forge.roaster.model.util.impl;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Collections;
@@ -16,7 +16,7 @@ import org.eclipse.jdt.internal.compiler.impl.CompilerOptions;
  * <li>{@link JavaCore#COMPILER_COMPLIANCE}</li>
  * <li>{@link JavaCore#COMPILER_CODEGEN_TARGET_PLATFORM}</li>
  * </ul>
- * 
+ *
  * @author Kai Mueller
  *
  */
@@ -39,7 +39,7 @@ public class JDTOptions
 
    /**
     * Get all globally defined JDT options.
-    * 
+    *
     * @return a map of all globally defined options as a unmodifiable map
     * @see Collections#unmodifiableMap
     */
@@ -50,7 +50,7 @@ public class JDTOptions
 
    /**
     * Get a certain JDT option.
-    * 
+    *
     * @param option the option
     * @return the value of the option or {@code null} if the option is not defined
     */

@@ -5,7 +5,7 @@
  * http://www.eclipse.org/legal/epl-v10.html
  */
 
-package org.jboss.forge.roaster.spi;
+package org.jboss.forge.roaster.spi.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,11 +40,12 @@ import org.jboss.forge.roaster.model.source.JavaEnumSource;
 import org.jboss.forge.roaster.model.source.JavaInterfaceSource;
 import org.jboss.forge.roaster.model.source.JavaPackageInfoSource;
 import org.jboss.forge.roaster.model.source.JavaSource;
-import org.jboss.forge.roaster.model.util.JDTOptions;
+import org.jboss.forge.roaster.model.util.impl.JDTOptions;
+import org.jboss.forge.roaster.spi.JavaParser;
 
 /**
  * The default implementation of a {@link JavaParser}.
- * 
+ *
  * @author <a href="mailto:lincolnbaxter@gmail.com">Lincoln Baxter, III</a>
  */
 public class JavaParserImpl implements JavaParser
@@ -94,7 +95,7 @@ public class JavaParserImpl implements JavaParser
    /**
     * Create a {@link JavaType} instance from the given {@link Document}, {@link CompilationUnit},
     * {@link TypeDeclaration}, and enclosing {@link JavaType} type.
-    * 
+    *
     * @param enclosingType the enclosing type of the new java type
     * @param document the document of the new java type
     * @param unit the compilation unit of the new java type

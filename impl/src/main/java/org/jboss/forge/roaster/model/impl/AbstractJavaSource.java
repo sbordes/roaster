@@ -28,7 +28,7 @@ import org.jboss.forge.roaster.model.ast.TypeDeclarationFinderVisitor;
 import org.jboss.forge.roaster.model.source.JavaSource;
 import org.jboss.forge.roaster.model.source.StaticCapableSource;
 import org.jboss.forge.roaster.model.source.TypeHolderSource;
-import org.jboss.forge.roaster.spi.JavaParserImpl;
+import org.jboss.forge.roaster.spi.impl.JavaParserImpl;
 
 /**
  * Represents a Java Source File which allow types

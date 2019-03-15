@@ -48,7 +48,7 @@ import org.jboss.forge.roaster.model.source.MemberSource;
 import org.jboss.forge.roaster.model.source.MethodSource;
 import org.jboss.forge.roaster.model.source.ParameterSource;
 import org.jboss.forge.roaster.model.util.Types;
-import org.jboss.forge.roaster.spi.JavaParserImpl;
+import org.jboss.forge.roaster.spi.impl.JavaParserImpl;
 
 @SuppressWarnings("unchecked")
 class EnumConstantBodyImpl implements EnumConstantSource.Body

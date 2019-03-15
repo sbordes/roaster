@@ -17,7 +17,7 @@ import org.jboss.forge.roaster.Roaster;
 import org.jboss.forge.roaster.Streams;
 import org.jboss.forge.roaster.model.source.JavaClassSource;
 import org.jboss.forge.roaster.model.source.JavaDocSource;
-import org.jboss.forge.roaster.model.util.Formatter;
+import org.jboss.forge.roaster.model.util.impl.Formatter;
 import org.jboss.forge.test.roaster.model.FieldAnnotationTest;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;

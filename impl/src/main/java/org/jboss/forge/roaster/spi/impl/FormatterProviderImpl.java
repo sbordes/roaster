@@ -5,15 +5,16 @@
  * http://www.eclipse.org/legal/epl-v10.html
  */
 
-package org.jboss.forge.roaster.spi;
+package org.jboss.forge.roaster.spi.impl;
 
 import java.util.Properties;
 
-import org.jboss.forge.roaster.model.util.Formatter;
+import org.jboss.forge.roaster.model.util.impl.Formatter;
+import org.jboss.forge.roaster.spi.FormatterProvider;
 
 /**
  * Implementation of the {@link FormatterProvider} interface.
- * 
+ *
  * @author <a href="ggastald@redhat.com">George Gastaldi</a>
  */
 public class FormatterProviderImpl implements FormatterProvider

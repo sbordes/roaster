@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.jboss.forge.roaster.model.util.Formatter;
+import org.jboss.forge.roaster.model.util.impl.Formatter;
 
 /**
  * Command runner for the formatting.

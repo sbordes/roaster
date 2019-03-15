@@ -39,8 +39,8 @@ import org.jboss.forge.roaster.model.source.AnnotationSource;
 import org.jboss.forge.roaster.model.source.Import;
 import org.jboss.forge.roaster.model.source.JavaDocSource;
 import org.jboss.forge.roaster.model.source.JavaSource;
-import org.jboss.forge.roaster.model.util.Formatter;
-import org.jboss.forge.roaster.model.util.JDTOptions;
+import org.jboss.forge.roaster.model.util.impl.Formatter;
+import org.jboss.forge.roaster.model.util.impl.JDTOptions;
 import org.jboss.forge.roaster.model.util.Types;
 import org.jboss.forge.roaster.spi.WildcardImportResolver;
 
@@ -229,11 +229,11 @@ public abstract class JavaSourceImpl<O extends JavaSource<O>> implements JavaSou
          for (String genericPart : Types.splitGenerics(className))
          {
          // a type variable is not qualified, so it won't be imported by accident
-            if (Types.isQualified(genericPart)) 
+            if (Types.isQualified(genericPart))
                addImport(genericPart);
          }
       }
-      
+
       // test this after generics are imported
       strippedClassName = Types.stripGenerics(strippedClassName);
       if (!Types.isQualified(strippedClassName) || Types.isJavaLang(strippedClassName))
@@ -260,7 +260,7 @@ public abstract class JavaSourceImpl<O extends JavaSource<O>> implements JavaSou
    public Import getImport(final String className)
    {
       String strippedClassName = Types.stripArray(Types.stripGenerics(className));
-      
+
       for (Import imprt : getImports())
       {
          String qualifiedName = imprt.getQualifiedName();

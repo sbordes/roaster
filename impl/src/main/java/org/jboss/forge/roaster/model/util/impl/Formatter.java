@@ -5,7 +5,7 @@
  * http://www.eclipse.org/legal/epl-v10.html
  */
 
-package org.jboss.forge.roaster.model.util;
+package org.jboss.forge.roaster.model.util.impl;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -24,6 +24,7 @@ import org.eclipse.jface.text.Document;
 import org.eclipse.jface.text.IDocument;
 import org.eclipse.text.edits.TextEdit;
 import org.jboss.forge.roaster.model.source.JavaClassSource;
+import org.jboss.forge.roaster.model.util.FormatterProfileReader;
 
 /**
  * Formatter for java source code.
